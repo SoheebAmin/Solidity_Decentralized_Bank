@@ -15,5 +15,5 @@ module.exports = async function(deployer) {
 	const dbank = await dBank.deployed()
 
 	//change token's owner/minter from deployer to dBank
-	await token.passMinterRole(dbank.address)
+	await token.passMinterRole(dBank.address)
 };
